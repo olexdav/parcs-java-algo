@@ -28,7 +28,7 @@ public class App implements AM {
       channel c1 = p1.createChannel();
       p1.execute("Algo");
       ArrayList<Integer> range = new ArrayList<Integer>((int)n);
-      for (int i=0; i<n; i++) {
+      for (int i=1; i<=n; i++) {
             range.add(i);
       }
       c1.write(range);
