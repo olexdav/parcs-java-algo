@@ -35,7 +35,8 @@ public class App implements AM {
 
       System.out.println("Waiting for result...");
       long r = c1.readLong();
-      System.out.println("Result found.");
+      System.out.println("Result found:");
+      System.out.println(r);
 
       //System.out.println("F"+n+"="+r);
       try{
