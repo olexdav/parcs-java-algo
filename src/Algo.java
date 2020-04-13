@@ -27,7 +27,7 @@ public class Algo implements AM{
                 channels[i].write(new List(range.subList(l, r)));
             }
             result = 1; // Gather results
-            for (int i = 0; i < parts; i++) {
+            for (int i = 0; i < parts; i++)
                 result *= channels[i].readLong();
         }
         info.parent.write(result);
