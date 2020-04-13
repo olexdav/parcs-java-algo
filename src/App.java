@@ -29,7 +29,7 @@ public class App implements AM {
       channel c1 = p1.createChannel();
       p1.execute("Algo");
       //ArrayList<Integer> range = IntStream.rangeClosed(1, (int)n).boxed().collect(Collectors.toList());
-      List<Integer> range = new ArrayList<>(n);
+      List<int> range = new ArrayList<int>(n);
       for (int i=0; i<n; i++) {
             range.add(i);
       }
