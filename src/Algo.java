@@ -13,7 +13,7 @@ public class Algo implements AM{
         }
         else {
             int parts = 2;
-            int step = int(Math.ceil(float(range.size()) / float(parts)));
+            int step = (int)(Math.ceil((float)(range.size()) / (float)(parts)));
             point* points = new point[parts];
             channel* channels = new channel[parts];
             for (int i = 0; i < parts; i++) { // Split tasks between workers
