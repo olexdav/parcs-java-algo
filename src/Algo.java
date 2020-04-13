@@ -1,6 +1,7 @@
 import parcs.*;
 import java.lang.Math;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Algo implements AM{
     public void run(AMInfo info){
@@ -25,7 +26,7 @@ public class Algo implements AM{
                 points[i] = info.createPoint();
                 channels[i] = points[i].createChannel();
                 points[i].execute("Algo");
-                channels[i].write(new List(range.subList(l, r)));
+                channels[i].write(new ArrayList<Integer>(range.subList(l, r)));
             }
             result = 1; // Gather results
             for (int i = 0; i < parts; i++)
