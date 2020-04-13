@@ -6,11 +6,10 @@ public class Algo implements AM{
         //long n,r1,r2,r;
         long result;
         List<Integer> range = (List<Integer>)info.parent.readObject();
-        if (range.size() == 0) {
+        if (range.size() == 0)
             result = 1;
-        else if (range.size() == 1) {
+        else if (range.size() == 1)
             result = range[0];
-        }
         else {
             int parts = 2;
             int step = (int)(Math.ceil((float)(range.size()) / (float)(parts)));
