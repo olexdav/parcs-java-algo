@@ -1,5 +1,6 @@
 import java.io.*;
 import parcs.*;
+import java.util.stream.IntStream;
 
 public class App implements AM {
 
