@@ -25,7 +25,8 @@ public class App implements AM {
       point p1 = info.createPoint();
       channel c1 = p1.createChannel();
       p1.execute("Algo");
-      c1.write(n);
+      List<Integer> range = IntStream.rangeClosed(1, n).boxed().collect(Collectors.toList());
+      c1.write(range);
 
       System.out.println("Waiting for result...");
       long r = c1.readLong();
