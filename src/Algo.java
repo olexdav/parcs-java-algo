@@ -1,5 +1,6 @@
 import parcs.*;
 import java.lang.Math;
+import java.util.List;
 
 public class Algo implements AM{
     public void run(AMInfo info){
