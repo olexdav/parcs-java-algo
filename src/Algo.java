@@ -10,7 +10,7 @@ public class Algo implements AM{
         if (range.size() == 0)
             result = 1;
         else if (range.size() == 1)
-            result = range[0];
+            result = range.get(0);
         else {
             int parts = 2;
             int step = (int)(Math.ceil((float)(range.size()) / (float)(parts)));
