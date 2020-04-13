@@ -2,7 +2,7 @@ import java.io.*;
 import parcs.*;
 import java.util.stream.IntStream;
 import java.util.stream.Collectors;
-import java.util.List;
+import java.util.ArrayList;
 
 public class App implements AM {
 
@@ -28,7 +28,7 @@ public class App implements AM {
       point p1 = info.createPoint();
       channel c1 = p1.createChannel();
       p1.execute("Algo");
-      List<Integer> range = IntStream.rangeClosed(1, (int)n).boxed().collect(Collectors.toList());
+      ArrayList<Integer> range = IntStream.rangeClosed(1, (int)n).boxed().collect(Collectors.toList());
       c1.write(range);
 
       System.out.println("Waiting for result...");
