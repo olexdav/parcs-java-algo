@@ -42,7 +42,7 @@ public class App implements AM {
       System.out.println("Waiting for result...");
       //String r = (String)c1.readObject();
       System.out.println("Result found:");
-      System.out.println(ints);
+      System.out.println(integers);
 
       //System.out.println("F"+n+"="+r);
       //try{
