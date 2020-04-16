@@ -32,11 +32,12 @@ public class App implements AM {
       c1.write(integers);
 
       System.out.println("Waiting for result...");
-      //String r = (String)c1.readObject();
       List<Integer> r = (List<Integer>)c1.readObject();
-      //Collections.sort(integers);
-      System.out.println("Result found:");
-      System.out.println(r);
+      System.out.println("Result found!");
+      System.out.println("First 10 values:");
+      System.out.println(r.subList(0, 10));
+      System.out.println("Last 10 values:");
+      System.out.println(r.subList(r.size()-10, r.size()));
 
       //System.out.println("F"+n+"="+r);
       //try{
