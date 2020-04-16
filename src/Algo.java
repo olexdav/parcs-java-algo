@@ -33,7 +33,7 @@ public class Algo implements AM{
             BigInteger result = new BigInteger("1"); // Gather results
             BigInteger channel_res;
             for (int i = 0; i < parts; i++)
-                channel_res = new BigInteger(channels[i].readString());
+                channel_res = new BigInteger((String)channels[i].readObject());
                 result = result.multiply(channel_res);
         }
         info.parent.write(result.toString());
