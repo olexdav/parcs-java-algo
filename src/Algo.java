@@ -5,8 +5,6 @@ import java.util.*;
 public class Algo implements AM{
     public void run(AMInfo info){
         ArrayList<Integer> arr = (ArrayList<Integer>)info.parent.readObject();
-        System.out.println("DEBUG");
-        System.out.println(arr);
         Collections.sort(arr);
         //if (range.size() == 0)
         //    result = new BigInteger("1");
@@ -35,6 +33,8 @@ public class Algo implements AM{
         //        channel_res = new BigInteger((String)channels[i].readObject());
         //        result = result.multiply(channel_res);
         //}
-        info.parent.write(String.valueOf(arr.size()));
+        
+        //info.parent.write(String.valueOf(arr.size()));
+        info.parent.write("Nice!");
     }
 }
