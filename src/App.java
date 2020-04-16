@@ -15,10 +15,19 @@ public class App implements AM {
     }
 
     public void run(AMInfo info) {
-      int[] ints;
+      List<Integer> integers = new ArrayList<>();
       try {
-          ints = Files.lines(Paths.get("input-100.txt"))
-                  .mapToInt(Integer::parseInt).toArray();
+          //ints = Files.lines(Paths.get("input-100.txt"))
+          //        .mapToInt(Integer::parseInt).toArray();
+          Path filePath = Paths.get("input-100.txt");
+          Scanner scanner = new Scanner(filePath);
+          while (scanner.hasNext()) {
+              if (scanner.hasNextInt()) {
+                  integers.add(scanner.nextInt());
+              } else {
+                  scanner.next();
+              }
+          }
       } catch (IOException e) {e.printStackTrace(); return;}
 
       //point p1 = info.createPoint();
