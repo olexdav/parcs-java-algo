@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class App implements AM {
 
@@ -43,6 +44,7 @@ public class App implements AM {
 
       System.out.println("Waiting for result...");
       //String r = (String)c1.readObject();
+      Arrays.sort(integers);
       System.out.println("Result found:");
       System.out.println(integers);
 
