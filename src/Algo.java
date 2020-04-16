@@ -2,6 +2,7 @@ import parcs.*;
 import java.lang.Math;
 import java.util.List;
 import java.util.ArrayList;
+import java.math.BigInteger;
 
 public class Algo implements AM{
     public void run(AMInfo info){
@@ -28,10 +29,12 @@ public class Algo implements AM{
                 points[i].execute("Algo");
                 channels[i].write(new ArrayList<Integer>(range.subList(l, r)));
             }
-            result = 1; // Gather results
+            //result = 1; 
+            BigInteger result = new BigInteger("1"); // Gather results
             for (int i = 0; i < parts; i++)
-                result *= channels[i].readLong();
+                BigInteger channel_res = new BigInteger(channels[i].readString());
+                result = result.multiply(channel_res);
         }
-        info.parent.write(result);
+        info.parent.write(result.toString());
     }
 }
