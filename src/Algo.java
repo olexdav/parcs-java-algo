@@ -12,7 +12,7 @@ public class Algo implements AM{
         if (range.size() == 0)
             result = new BigInteger("1");
         else if (range.size() == 1)
-            result = new BigInteger(range.get(0));
+            result = BigInteger.valueOf(range.get(0));
         else {
             int parts = 2;
             int step = (int)(Math.ceil((float)(range.size()) / (float)(parts)));
