@@ -29,7 +29,8 @@ public class Algo implements AM{
             }
             // Gather results
             //ArrayList<Integer>[] channel_res = new ArrayList<Integer>[parts];// = new ArrayList<Integer>();
-            ArrayList<Integer>[] channel_res = (ArrayList<Integer>[]) new Object[parts];
+            //ArrayList<Integer>[] channel_res = (ArrayList<Integer>[]) new Object[parts];
+            ArrayList<ArrayList<Integer>> channel_res = new ArrayList<ArrayList<Integer>>(parts);
             for (int i = 0; i < parts; i++)
                 channel_res[i] = (ArrayList<Integer>)channels[i].readObject();
             while (true) {
