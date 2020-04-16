@@ -6,7 +6,7 @@ public class Algo implements AM{
     public void run(AMInfo info){
         //long n,r1,r2,r;
         BigInteger result;
-        List<Integer> arr = (List<Integer>)info.parent.readObject();
+        ArrayList<Integer> arr = (ArrayList<Integer>)info.parent.readObject();
         Collections.sort(arr);
         //if (range.size() == 0)
         //    result = new BigInteger("1");
