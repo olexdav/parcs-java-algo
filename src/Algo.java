@@ -6,6 +6,7 @@ public class Algo implements AM{
     public void run(AMInfo info){
         ArrayList<Integer> arr = (ArrayList<Integer>)info.parent.readObject();
         Collections.sort(arr);
-        info.parent.write("Nice!");
+        info.parent.write(arr);
+        //info.parent.write("Nice!");
     }
 }
