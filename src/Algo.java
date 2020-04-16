@@ -4,8 +4,6 @@ import java.util.*;
 
 public class Algo implements AM{
     public void run(AMInfo info){
-        //long n,r1,r2,r;
-        BigInteger result;
         ArrayList<Integer> arr = (ArrayList<Integer>)info.parent.readObject();
         Collections.sort(arr);
         //if (range.size() == 0)
