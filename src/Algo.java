@@ -12,7 +12,7 @@ public class Algo implements AM{
         else if (arr.size() == 1)
             result.add(arr.get(0));
         else if (arr.size() >= 1000000) {
-            int parts = 2;
+            int parts = 4;
             int step = (int)(Math.ceil((float)(arr.size()) / (float)(parts)));
             point[] points = new point[parts];
             channel[] channels = new channel[parts];
