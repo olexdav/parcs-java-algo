@@ -5,6 +5,8 @@ import java.util.*;
 public class Algo implements AM{
     public void run(AMInfo info){
         ArrayList<Integer> arr = (ArrayList<Integer>)info.parent.readObject();
+        System.out.println("DEBUG");
+        System.out.println(arr);
         Collections.sort(arr);
         //if (range.size() == 0)
         //    result = new BigInteger("1");
