@@ -37,9 +37,9 @@ public class Algo implements AM{
                 boolean anything_left = false;
                 ArrayList<Integer> first = new ArrayList<>();
                 for (int i = 0; i < parts; i++) {
-                    if (channel_res[i].size() > 0) {
+                    if (channel_res.get(i).size() > 0) {
                         anything_left = true;
-                        first.add(channel_res[i].get(0));
+                        first.add(channel_res.get(i).get(0));
                     }
                     else first.add(9999999);
                 }
@@ -49,7 +49,7 @@ public class Algo implements AM{
                 for (int i = 1; i < parts; i++)
                     if (first.get(i) < first.get(chosen))
                         chosen = i;
-                result.add(channel_res[chosen].remove(0));
+                result.add(channel_res.get(chosen).remove(0));
             }
         }
         
