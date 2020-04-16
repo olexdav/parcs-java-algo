@@ -28,7 +28,8 @@ public class Algo implements AM{
                 channels[i].write(new ArrayList<Integer>(arr.subList(l, r)));
             }
             // Gather results
-            ArrayList<Integer>[] channel_res = new ArrayList<Integer>[parts];// = new ArrayList<Integer>();
+            //ArrayList<Integer>[] channel_res = new ArrayList<Integer>[parts];// = new ArrayList<Integer>();
+            ArrayList<Integer>[] channel_res = (ArrayList<Integer>[]) new Object[parts];
             for (int i = 0; i < parts; i++)
                 channel_res[i] = (ArrayList<Integer>)channels[i].readObject();
             while (true) {
@@ -47,7 +48,7 @@ public class Algo implements AM{
                 for (int i = 1; i < parts; i++)
                     if (first.get(i) < first.get(chosen))
                         chosen = i;
-                result.add(channel_res[chosen].pop());
+                result.add(channel_res[chosen].remove(0));
             }
         }
         
