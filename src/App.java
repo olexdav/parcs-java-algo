@@ -32,8 +32,8 @@ public class App implements AM {
       c1.write(integers);
 
       System.out.println("Waiting for result...");
-      String r = (String)c1.readObject();
-      //List<Integer> r = (List<Integer>)c1.readObject();
+      //String r = (String)c1.readObject();
+      List<Integer> r = (List<Integer>)c1.readObject();
       //Collections.sort(integers);
       System.out.println("Result found:");
       System.out.println(r);
