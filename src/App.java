@@ -13,7 +13,7 @@ public class App implements AM {
     }
 
     public void run(AMInfo info) {
-      List<Integer> integers = new ArrayList<>();
+      ArrayList<Integer> integers = new ArrayList<>();
       try {
           Path filePath = Paths.get("input-100.txt");
           Scanner scanner = new Scanner(filePath);
@@ -29,8 +29,7 @@ public class App implements AM {
       point p1 = info.createPoint();
       channel c1 = p1.createChannel();
       p1.execute("Algo");
-      ArrayList<Integer> channel_arg = integers;
-      c1.write(channel_arg);
+      c1.write(integers);
 
       System.out.println("Waiting for result...");
       //String r = (String)c1.readObject();
