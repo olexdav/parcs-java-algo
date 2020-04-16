@@ -32,7 +32,7 @@ public class Algo implements AM{
             for (int i = 0; i < parts; i++)
                 channel_res[i] = (ArrayList<Integer>)channels[i].readObject();
             while (true) {
-                bool anything_left = false;
+                boolean anything_left = false;
                 ArrayList<Integer> first = new ArrayList<>();
                 for (int i = 0; i < parts; i++) {
                     if (channel_res[i].size() > 0) {
