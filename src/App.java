@@ -15,7 +15,7 @@ public class App implements AM {
     public void run(AMInfo info) {
       ArrayList<Integer> integers = new ArrayList<>();
       try {
-          Path filePath = Paths.get("input-100.txt");
+          Path filePath = Paths.get("input-100000.txt");
           Scanner scanner = new Scanner(filePath);
           while (scanner.hasNext()) {
               if (scanner.hasNextInt()) {
