@@ -33,6 +33,6 @@ public class Algo implements AM{
         //        channel_res = new BigInteger((String)channels[i].readObject());
         //        result = result.multiply(channel_res);
         //}
-        info.parent.write((String)arr.size());
+        info.parent.write(String.valueOf(arr.size()));
     }
 }
