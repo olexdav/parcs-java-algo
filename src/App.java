@@ -14,7 +14,7 @@ public class App implements AM {
     }
 
     public void run(AMInfo info) {
-      int[] ints = [];
+      int[] ints;
       try {
           ints = Files.lines(Paths.get("input-100.txt"))
                   .mapToInt(Integer::parseInt).toArray();
