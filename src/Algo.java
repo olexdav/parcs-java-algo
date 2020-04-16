@@ -11,7 +11,7 @@ public class Algo implements AM{
         if (arr.size() == 0) {}
         else if (arr.size() == 1)
             result.add(arr.get(0));
-        else {
+        else if (arr.size() >= 1000000) {
             int parts = 2;
             int step = (int)(Math.ceil((float)(arr.size()) / (float)(parts)));
             point[] points = new point[parts];
@@ -51,6 +51,10 @@ public class Algo implements AM{
                         chosen = i;
                 result.add(channel_res.get(chosen).remove(0));
             }
+        }
+        else {
+            Collections.sort(arr);
+            result = arr;
         }
         
         info.parent.write(result);
