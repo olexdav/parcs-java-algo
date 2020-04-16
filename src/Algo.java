@@ -39,7 +39,7 @@ public class Algo implements AM{
                         anything_left = true;
                         first.add(channel_res[i].get(0));
                     }
-                    else first.add(9999999999);
+                    else first.add(9999999);
                 }
                 if (!anything_left)
                     break;
