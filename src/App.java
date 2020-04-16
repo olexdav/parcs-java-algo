@@ -34,7 +34,7 @@ public class App implements AM {
       c1.write(range);
 
       System.out.println("Waiting for result...");
-      long r = c1.readLong();
+      String r = c1.readString();
       System.out.println("Result found:");
       System.out.println(r);
 
